@@ -1,0 +1,19 @@
+
+
+
+<div class='functions'>
+  <p class='banner'>Upload the Image To Resize</p>
+  <mat-form-field><input matInput placeholder="Image width in pixels" [(ngModel)]='imageWidth'></mat-form-field>
+  <button mat-raised-button color="primary" (click)='fileUpload.click()' class='button'>Upload</button>
+  <input type='file' #fileUpload (change)='uploadImage($event)' id='fileUploader' />
+</div>
+
+
+
+
+ <mat-divider></mat-divider>
+
+<div class='imageBody'>
+  <img [src]='originalImage' class='images' /> <p class='Imagedescription'> {{ originalImageWidth }} </p>
+  <img [src]='resizedImage' class='images' /> <p class='Imagedescription'> {{ resizedImageWidth }} </p>
+</div>

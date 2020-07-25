@@ -1,0 +1,20 @@
+#fileUploader {
+  display:none;
+}
+
+.images {
+  max-width:200px
+}
+
+.functions, .imageBody {
+  text-align: center;
+  margin-top:2em;
+}
+
+.banner {
+  font-weight: bold;
+}
+
+.button {
+  margin-left:1em;
+}
